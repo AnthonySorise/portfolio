@@ -180,7 +180,7 @@ _____________________________________________________
 ---------- END - TABLE OF CONTENTS ----------
 */
 /* --------------------------------------------------
-	0.1 Settigns
+	0.1 Settings
 -------------------------------------------------- */
 /* ---- Colors ---- */
 /* ---- Label Colors ---- */
@@ -1567,7 +1567,7 @@ input[class="btn-ghost"]:after {
 }
 
 .btn-text:visited:hover, .btn-text-light:visited:hover {
-  color: #111;
+  /*color: #111;*/
   background: none;
   border: 2px solid #111111;
 }
