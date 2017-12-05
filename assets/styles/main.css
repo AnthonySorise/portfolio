@@ -8284,8 +8284,8 @@ form .input-error-2:focus {
 }
 
 .agency2-hero {
-  background: url(http://placehold.it/2440x1578);
-  background-size: cover;
+  background: url("../images/shattered.gif");
+  background-size: auto;
   background-position: 50%;
   background-attachment: fixed;
 }
