@@ -4366,6 +4366,11 @@ fieldset[disabled] .form-control:hover {
   left: 20px;
 }
 
+.slick-slider img{
+  width:150px;
+  height:auto;
+}
+
 /* --------------------------------------------------
 	12.0 Testimonials
 -------------------------------------------------- */
