@@ -390,6 +390,7 @@
 		// Brands/Clients Slider
 		$('.clients-slider').slick({
 			autoplay: true,
+			pauseOnHover: false,
 			autoplaySpeed: 2000,
 			slidesToShow: 5,
 			slidesToScroll: 1,
