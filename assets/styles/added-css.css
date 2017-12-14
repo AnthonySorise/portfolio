@@ -1,0 +1,36 @@
+.slick-slider img{
+    width:150px;
+    height:auto;
+}
+
+.skills.row>div{
+    /*font-weight: 600;*/
+    height: 200px;
+
+}
+
+.skills.row>div>div{
+    font-size: 18px;
+    color: #ececec;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills img{
+    display: flex;
+    width:100px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolioSelection{
+    width:65%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
