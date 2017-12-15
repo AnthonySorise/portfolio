@@ -1,12 +1,15 @@
-.slick-slider img{
-    width:150px;
-    height:auto;
+.skills.row>div{
+    height: 200px;
 }
 
-.skills.row>div{
-    /*font-weight: 600;*/
-    height: 200px;
-
+.skills.row img{
+    display: flex;
+    width:100px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
 }
 
 .skills.row>div>div{
@@ -18,15 +21,47 @@
     transform: translateX(-50%);
 }
 
-.skills img{
-    display: flex;
-    width:100px;
-    height: auto;
+.slick-track{
+    height: 320px;
+}
+
+#credits li>div{
+    position: absolute;
+    height: 320px;
+}
+
+#credits li>div>.creditImg{
+    height: 200px;
+}
+
+#credits li>div>.creditImg>img{
+    width:140px;
+    height:auto;
     position: relative;
     left: 50%;
-    top:50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
+
+#credits li>div>.creditDescription{
+    position: absolute;
+    width: 120%;
+    height: 100px;
+    font-size: 18px;
+    color: #ececec;
+    /*bottom: 0;*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#credits li>div>.creditDescription>p:nth-last-of-type(1){
+    font-style: italic;
+    position: absolute;
+    width:120%;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 #portfolioSelection{
     width:65%;

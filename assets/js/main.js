@@ -391,8 +391,8 @@
 		$('.clients-slider').slick({
 			autoplay: true,
 			pauseOnHover: false,
-			autoplaySpeed: 2000,
-			slidesToShow: 5,
+			autoplaySpeed: 1750,
+			slidesToShow: 6,
 			slidesToScroll: 1,
 			dots: false,
 			arrows: false,
@@ -400,22 +400,22 @@
 			    {
 			      breakpoint: 999,
 			      settings: {
-			        slidesToShow: 3,
-			        slidesToScroll: 2,
+			        slidesToShow: 4,
+			        slidesToScroll: 1,
 			        infinite: true,
 			      }
 			    },
 			    {
 			      breakpoint: 770,
 			      settings: {
-			        slidesToShow: 2,
+			        slidesToShow: 3,
 			        slidesToScroll: 1
 			      }
 			    },
 			    {
 			      breakpoint: 599,
 			      settings: {
-			        slidesToShow: 1,
+			        slidesToShow: 2,
 			        slidesToScroll: 1
 			      }
 			    }
