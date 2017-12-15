@@ -392,6 +392,7 @@
 			autoplay: true,
 			pauseOnHover: false,
 			autoplaySpeed: 1750,
+			draggable: false,
 			slidesToShow: 6,
 			slidesToScroll: 1,
 			dots: false,
