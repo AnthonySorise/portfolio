@@ -389,7 +389,7 @@
 
 		// Brands/Clients Slider
 		$('.clients-slider').slick({
-			autoplay: true,
+			autoplay: false,
 			pauseOnHover: false,
 			autoplaySpeed: 1750,
 			draggable: false,
@@ -422,7 +422,6 @@
 			    }
 			]
 		});
-
 		// Portfolio Single Slider
 		$('.single-img-slider').slick({
 			autoplay: true,
