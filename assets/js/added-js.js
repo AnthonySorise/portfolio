@@ -10,7 +10,6 @@ $(window).scroll(function() {
         wS = $(this).scrollTop();
 
     if (wS > (creditsHT+(creditsHH/2)-wH) && wS < (contactHT-200)){
-        console.log("CREDITS IN WINDOW")
         if(!isScrolledToCredits){
             isScrolledToCredits = true;
             $('.clients-slider').slick('play')
