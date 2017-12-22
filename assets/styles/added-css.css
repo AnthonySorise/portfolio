@@ -120,7 +120,7 @@
     position: relative!important;
     left: 50%!important;
     bottom: 25%!important;
-    transform: translate(-50%, 50%)!important;
+    transform: translate(-25%, 50%)!important;
 }
 .contact-info>address{
     /*background-color: rgba(17, 17, 17)!important;*/
@@ -142,6 +142,7 @@ a:hover .contactItemContainer>svg{
 
 .adr-mobile,.adr-email{
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 .copyright{
