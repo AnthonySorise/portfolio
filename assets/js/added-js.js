@@ -1,3 +1,4 @@
+//***CREDITS**
 var isScrolledToCredits = false;
 
 $(window).scroll(function() {
@@ -9,7 +10,7 @@ $(window).scroll(function() {
         wH = $(window).height(),
         wS = $(this).scrollTop();
 
-    if (wS > (creditsHT+(creditsHH/2)-wH) && wS < (contactHT-200)){
+    if (wS > (creditsHT+(creditsHH/2)-wH) && wS < (contactHT-300)){
         if(!isScrolledToCredits){
             isScrolledToCredits = true;
             $('.clients-slider').slick('play')
@@ -27,4 +28,12 @@ $(window).focus(function(){
             $('.clients-slider').slick('play')
         }
     }
+});
+
+
+//**CONTACT**
+$(document).ready(function(){
+    $('.adr-mobile').text("248.701.4032");
+    $('.adr-email').text("contact@AnthonySorise.com");
+    $("#emailA").attr("href", "mailto:contact@AnthonySorise.com")
 });
