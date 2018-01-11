@@ -25,7 +25,7 @@
     top:50%;
     transform: translate(-50%, -50%);
 }
-.skills.row>div>div{
+.skills.row>div>div {
     font-size: 18px;
     color: #ececec;
     position: absolute;
@@ -33,8 +33,25 @@
     left: 50%;
     transform: translateX(-50%);
 }
+@media (max-width: 768px){
+    .skills.row>div{
+        height: 145px;
+    }
+    .skills.row img{
+        width: 75px;
+    }
+    .skills.row .text-center{
+        font-size: 11px;
+    }
+}
+
 
 /****CREDITS****/
+.slick-list{
+    position: relative;
+    right:25px;
+}
+
 .slick-track{
     height: 320px;
 }
