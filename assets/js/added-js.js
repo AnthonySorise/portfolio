@@ -30,6 +30,11 @@ $(window).focus(function(){
     }
 });
 
+//in firefox, modals pause the client slider
+$('.modal').on('hidden.bs.modal', function (e) {
+    $('.clients-slider').slick('play')
+});
+
 
 //**CONTACT**
 $(document).ready(function(){
