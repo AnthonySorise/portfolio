@@ -1,14 +1,13 @@
 <?php
 
-
 require_once('email_config.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 
-$message=[];
-$output = [
+$message=array();
+$output = array(
     'success' => null,
-    'messages' => []
-];
+    'messages' => array()
+);
 
 $message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 if(empty($message['name'])){
@@ -30,13 +29,12 @@ if(empty($message['message'])){
 
 
 if($output['success'] !== null){
-    http_response_code(400);
+    //http_response_code(400);
     echo json_encode($output);
     exit();
 }
 
 $message['message'] = nl2br($message['message']);
-
 
 $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
@@ -57,7 +55,7 @@ $options = array(
         'allow_self_signed' => true
     )
 );
-$mail->smtpConnect($options);
+$mail->smtpConnect($options); // HANGS CONNECTION
 $mail->From = $message['email'];  // sender's email address (shows in "From" field)
 $mail->FromName = $message['name'];   // sender's name (shows in "From" field)
 $mail->addAddress(EMAIL_USER);  // Add a recipient
@@ -82,6 +80,6 @@ if(!$mail -> send()){
 else{
     $output['success'] = true;
 }
-//echo json_encode($output);    //COMMENTED OUT UNTIL CAN FIND WAY TO NOT RENDER ON PAGE
+echo json_encode($output);    //COMMENTED OUT UNTIL CAN FIND WAY TO NOT RENDER ON PAGE
 
 ?>

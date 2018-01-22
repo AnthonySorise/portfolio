@@ -22,7 +22,7 @@
             // Scrolling Core
             frameRate        : 150, // [Hz]
             animationTime    : 500, // [px]
-            stepSize         : 150, // [px] (120 default)
+            stepSize         : 100, // [px] (120 default)
 
             // Pulse (less tweakable)
             // ratio of "tail" to "acceleration"
