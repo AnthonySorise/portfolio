@@ -16,6 +16,10 @@
 #about{
     color:#111;
     font-weight: 400;
+    padding-bottom: 25px;
+}
+#about>.section{
+    padding-bottom: 0;
 }
 @media (max-width: 992px){
     #about img{
@@ -29,6 +33,10 @@
 
 
 /****SKILLS****/
+#skills{
+    padding-bottom: 75px;
+}
+
 .skills.row>div{
     height: 180px;
 }
@@ -67,6 +75,9 @@
 .resumeLink{
     position: relative;
     top:30px;
+}
+.resumeLinkButton:hover{
+    color:#111!important;
 }
 
 /****CREDITS****/
