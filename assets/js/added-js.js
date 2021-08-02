@@ -36,6 +36,7 @@ $('.modal').on('hidden.bs.modal', function (e) {
 
 //**CONTACT**
 $(document).ready(function(){
+    $('.a-mobile').attr("href", "tel:2487014032");
     $('.adr-mobile').text("248.701.4032");
     $('.adr-email').text("contact@AnthonySorise.com");
     $(".email").attr("href", "mailto:contact@AnthonySorise.com")
