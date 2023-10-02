@@ -662,15 +662,16 @@
         }
 
         var wheelEvent;
-        if ('onwheel' in document.createElement('div'))
+        if ('onwheel' in document.createElement('div')) {
             wheelEvent = 'wheel';
-        else if ('onmousewheel' in document.createElement('div'))
+        } else if ('onmousewheel' in document.createElement('div')) {
             wheelEvent = 'mousewheel';
-
+        }
+        
         if (wheelEvent) {
-            addEvent(wheelEvent, wheel);
-            addEvent('mousedown', mousedown);
-            addEvent('load', init);
+            document.addEventListener(wheelEvent, wheel, { passive: false });
+            document.addEventListener('mousedown', mousedown);
+            document.addEventListener('load', init);
         }
 
     }
